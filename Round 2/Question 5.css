@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+}
+
+nav {
+    background-color: #000000;
+}
+
+.headings {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+}
+
+.heading {
+    margin: 10px;
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    border-bottom: 1px solid #000000;
+}
+
+.heading:hover {
+    animation: underline 0.5s;
+    border-bottom: 1px solid #FFFFFF;
+    transition: 0.5s;
+}
+
+.home {
+    margin: auto;
+    margin-top: 2px;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    animation: jump 2s infinite;
+}
+
+@keyframes jump {
+    0% {
+        margin-top: 0;
+    }
+
+    40% {
+        margin-top: 100px;
+    }
+
+    60% {
+        margin-top: 100px;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
